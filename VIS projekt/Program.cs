@@ -92,8 +92,16 @@ namespace VIS_projekt
             //foreach (Oddeleni b in ods)
             //   Console.WriteLine(b.o_ID + "\t" + b.nazev);
 
-
-
+            //Notifikace
+            //NotifikaceMapper nm = new NotifikaceMapper();
+            //Notifikace n = new Notifikace();
+            //n.text = "ahoj";
+            //n.Zamestnanec_z_ID = 1;
+            //n.Tiket_t_ID = 1;
+            //nm.insert(n);
+            //Collection<Notifikace> nots = nm.selectAll();
+            //foreach (Notifikace b in nots)
+            //    Console.WriteLine(b.n_ID + "\t" + b.text);
 
             Console.WriteLine("OK");
 

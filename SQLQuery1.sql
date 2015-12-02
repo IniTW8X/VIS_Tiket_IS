@@ -1,1 +1,1 @@
-﻿select * from Oddeleni
+﻿select * from Notifikace

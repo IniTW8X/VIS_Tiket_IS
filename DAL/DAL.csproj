@@ -41,10 +41,12 @@
   <ItemGroup>
     <Compile Include="Database.cs" />
     <Compile Include="Entities\Kategorie.cs" />
+    <Compile Include="Entities\Notifikace.cs" />
     <Compile Include="Entities\Oddeleni.cs" />
     <Compile Include="Entities\Tiket.cs" />
     <Compile Include="Entities\Zamestnanec.cs" />
     <Compile Include="Mappers\KategorieMapper.cs" />
+    <Compile Include="Mappers\NotifikaceMapper.cs" />
     <Compile Include="Mappers\OddeleniMapper.cs" />
     <Compile Include="Mappers\TiketMapper.cs" />
     <Compile Include="Mappers\ZamestnanecMapper.cs" />
