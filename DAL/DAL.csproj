@@ -40,7 +40,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Database.cs" />
+    <Compile Include="Entities\Kategorie.cs" />
     <Compile Include="Entities\Tiket.cs" />
+    <Compile Include="Mappers\KategorieMapper.cs" />
     <Compile Include="Mappers\TiketMapper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

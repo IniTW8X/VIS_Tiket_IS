@@ -77,7 +77,7 @@ namespace DAL.Mappers
             return tikety;
         }
 
-        private static Collection<Tiket> Read(SqlDataReader reader, String fce)
+        private Collection<Tiket> Read(SqlDataReader reader, String fce)
         {
             Collection<Tiket> tikety = new Collection<Tiket>();
 
@@ -137,7 +137,7 @@ namespace DAL.Mappers
         }
 
         //insert
-        private static void PrepareCommandInsert(SqlCommand command, Tiket Tiket)
+        private void PrepareCommandInsert(SqlCommand command, Tiket Tiket)
         {
 
             command.Parameters.Add(new SqlParameter("@nazev", SqlDbType.VarChar, Tiket.LEN_ATTR_nazev));
@@ -172,7 +172,7 @@ namespace DAL.Mappers
         }
 
         //update
-        private static void PrepareCommandUpdate(SqlCommand command, Tiket Tiket)
+        private void PrepareCommandUpdate(SqlCommand command, Tiket Tiket)
         {
 
             command.Parameters.Add(new SqlParameter("@nazev", SqlDbType.VarChar, Tiket.LEN_ATTR_nazev));
