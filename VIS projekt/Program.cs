@@ -18,7 +18,7 @@ namespace VIS_projekt
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             //Application.Run(new Form1());
-//Tiket
+            //Tiket
             // TiketMapper tm = new TiketMapper();
             // insert
             // Tiket t1 = new Tiket();
@@ -42,7 +42,7 @@ namespace VIS_projekt
             //Collection<Tiket> tiks1 = tm.selectNove();
             //foreach (Tiket b in tiks1)
             //Console.WriteLine(b.t_ID + "\t" + b.nazev);
-//Kategorie
+            //Kategorie
             //KategorieMapper km = new KategorieMapper();
             //Kategorie k = new Kategorie();
             //k.nazev = "updated";
@@ -55,6 +55,25 @@ namespace VIS_projekt
             //Collection<Kategorie> kats1 = km.selectAll();
             //foreach (Kategorie b in kats1)
             //    Console.WriteLine(b.kat_ID + "\t" + b.nazev);
+
+            //ZamestnanecMapper zm = new ZamestnanecMapper();
+            //Zamestnanec z = new Zamestnanec();
+            //z.jmeno = "petr2";
+            //z.prijmeni = "luna";
+            //z.datum_narozeni = new DateTime(2012, 1, 1);
+            //z.pozice = "neco";
+            //z.platova_trida = 1;
+            //z.Oddeleni_o_ID = 1;
+            //z.poznamka = "";
+            //z.z_ID = 1;
+            //zm.insert(z);
+            //zm.update(z);
+            //z = zm.selectOne(1);
+            //Console.WriteLine(z.jmeno);
+            ///Collection<Zamestnanec> zams = zm.selectAll();
+            //foreach (Zamestnanec b in zams)
+            //    Console.WriteLine(b.z_ID + "\t" + b.jmeno);
+
 
 
             Console.WriteLine("OK");

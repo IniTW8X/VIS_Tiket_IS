@@ -42,8 +42,10 @@
     <Compile Include="Database.cs" />
     <Compile Include="Entities\Kategorie.cs" />
     <Compile Include="Entities\Tiket.cs" />
+    <Compile Include="Entities\Zamestnanec.cs" />
     <Compile Include="Mappers\KategorieMapper.cs" />
     <Compile Include="Mappers\TiketMapper.cs" />
+    <Compile Include="Mappers\ZamestnanecMapper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
