@@ -103,6 +103,15 @@ namespace VIS_projekt
             //foreach (Notifikace b in nots)
             //    Console.WriteLine(b.n_ID + "\t" + b.text);
 
+            //Skupina
+            //SkupinaMapper sm = new SkupinaMapper();
+            //Skupina s = new Skupina();
+            //Collection<Skupina> skups = sm.selectAll();
+            //foreach (Skupina b in skups)
+            //    Console.WriteLine(b.skup_ID + "\t" + b.nazev);
+
+
+
             Console.WriteLine("OK");
 
         }

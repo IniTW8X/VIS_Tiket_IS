@@ -1,1 +1,1 @@
-﻿select * from Notifikace
+﻿select * from je_prirazen
