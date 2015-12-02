@@ -40,11 +40,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DBTicketRepository.cs" />
-    <Compile Include="TicketRepository.cs" />
+    <Compile Include="Repositories\DBTiketRepository.cs" />
+    <Compile Include="Repositories\TiketRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="TicketService.cs" />
-    <Compile Include="XMLTicketRepository.cs" />
+    <Compile Include="Services\TiketService.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DAL\DAL.csproj">

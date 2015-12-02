@@ -20,7 +20,7 @@ namespace VIS_projekt
             //Application.Run(new Form1());
 
             //Tiket
-            // TiketMapper tm = new TiketMapper();
+            //TiketMapper tm = new TiketMapper();
             // insert
             // Tiket t1 = new Tiket();
             //t1.nazev = "ahoj";
@@ -40,7 +40,7 @@ namespace VIS_projekt
             //tm.update(t1);
             //Tiket t2 = tm.selectOne(1);
             //Console.WriteLine(t2.nazev);
-            //Collection<Tiket> tiks1 = tm.selectNove();
+            //Collection<Tiket> tiks1 = tm.selectAll();
             //foreach (Tiket b in tiks1)
             //Console.WriteLine(b.t_ID + "\t" + b.nazev);
 

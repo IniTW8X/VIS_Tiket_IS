@@ -7,10 +7,10 @@ using System.Threading.Tasks;
 
 namespace BLL
 {
-    public interface TicketRepository
+    public interface TiketRepository
     {
-         List<Tiket> findAll();
-
-         bool save(Tiket t);
+        int saveTiket(Tiket t);
+        int getLastID();
+     
     }
 }

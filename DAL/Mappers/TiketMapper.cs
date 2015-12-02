@@ -15,6 +15,7 @@ namespace DAL.Mappers
 
         public static String SQL_INSERT = "INSERT INTO Tiket VALUES (@nazev, @popis, @priorita, @vytvoreno, @lhuta, @status, @uzav_pozn, @Zamestnanec_z_ID, @Kategorie_kat_ID, @Skupina_skup_ID)";
         public static String SQL_UPDATE = "UPDATE Tiket SET nazev=@nazev, popis=@popis, priorita=@priorita, vytvoreno=@vytvoreno, lhuta=@lhuta, status=@status, uzav_pozn=@uzav_pozn, Zamestnanec_z_ID=@Zamestnanec_z_ID, Kategorie_kat_ID=@Kategorie_kat_ID, Skupina_skup_ID=@Skupina_skup_ID WHERE t_ID=@t_ID";
+        public static String SQL_SELECT_ALL = "SELECT * FROM Tiket";
         public static String SQL_SELECT_ID = "SELECT * FROM Tiket WHERE t_ID=@t_ID";
         public static String SQL_SELECT_PROSLE = "SELECT t.t_ID, t.nazev, t.popis, t.priorita, t.vytvoreno, t.lhuta, t.status, t.uzav_pozn, t.Zamestnanec_z_ID, t.Kategorie_kat_ID, t.Skupina_skup_ID From Tiket t WHERE t.lhuta <= GETDATE() AND t.status = 'Prirazen' ORDER BY t.lhuta DESC";
         public static String SQL_SELECT_NOVE = "SELECT t.t_ID, t.nazev, t.popis, t.priorita, t.vytvoreno, t.lhuta, t.status, t.uzav_pozn, t.Zamestnanec_z_ID, t.Kategorie_kat_ID, t.Skupina_skup_ID FROM Tiket t WHERE t.status = 'Novy'";
@@ -77,11 +78,21 @@ namespace DAL.Mappers
             return tikety;
         }
 
+        public Collection<Tiket> selectAll()
+        {
+            SqlCommand command = db.CreateCommand(SQL_SELECT_ALL);
+            SqlDataReader reader = db.Select(command);
+
+            Collection<Tiket> tikety = Read(reader, "select_all");
+            reader.Close();
+            return tikety;
+        }
+
         private Collection<Tiket> Read(SqlDataReader reader, String fce)
         {
             Collection<Tiket> tikety = new Collection<Tiket>();
 
-            if (fce == "select_one")
+            if (fce == "select_one" || fce == "select_all")
             {
                 while (reader.Read())
                 {
