@@ -18,6 +18,7 @@ namespace VIS_projekt
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             //Application.Run(new Form1());
+
             //Tiket
             // TiketMapper tm = new TiketMapper();
             // insert
@@ -42,6 +43,7 @@ namespace VIS_projekt
             //Collection<Tiket> tiks1 = tm.selectNove();
             //foreach (Tiket b in tiks1)
             //Console.WriteLine(b.t_ID + "\t" + b.nazev);
+
             //Kategorie
             //KategorieMapper km = new KategorieMapper();
             //Kategorie k = new Kategorie();
@@ -56,6 +58,7 @@ namespace VIS_projekt
             //foreach (Kategorie b in kats1)
             //    Console.WriteLine(b.kat_ID + "\t" + b.nazev);
 
+            //Zamestnanec
             //ZamestnanecMapper zm = new ZamestnanecMapper();
             //Zamestnanec z = new Zamestnanec();
             //z.jmeno = "petr2";
@@ -70,9 +73,25 @@ namespace VIS_projekt
             //zm.update(z);
             //z = zm.selectOne(1);
             //Console.WriteLine(z.jmeno);
-            ///Collection<Zamestnanec> zams = zm.selectAll();
+            //Collection<Zamestnanec> zams = zm.selectAll();
             //foreach (Zamestnanec b in zams)
             //    Console.WriteLine(b.z_ID + "\t" + b.jmeno);
+
+            //Oddeleni
+            //OddeleniMapper om = new OddeleniMapper();
+            //Oddeleni o = new Oddeleni();
+            //o.nazev = "test2";
+            //o.pocet_zamestnancu = 1;
+            //o.poznamka = "";
+            //o.o_ID = 1002;
+            //om.insert(o);
+            //om.update(o);
+            //o = om.selectOne(1);
+            //Console.WriteLine(o.nazev);
+            //Collection<Oddeleni> ods = om.selectAll();
+            //foreach (Oddeleni b in ods)
+            //   Console.WriteLine(b.o_ID + "\t" + b.nazev);
+
 
 
 

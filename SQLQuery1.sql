@@ -1,1 +1,1 @@
-﻿select * from Zamestnanec
+﻿select * from Oddeleni
