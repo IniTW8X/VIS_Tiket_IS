@@ -1,4 +1,6 @@
-﻿using DAL;
+﻿using BLL;
+using BLL.Services;
+using DAL;
 using DAL.Entities;
 using DAL.Mappers;
 using System;
@@ -18,6 +20,21 @@ namespace VIS_projekt
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             //Application.Run(new Form1());
+
+            TiketService ts = new TiketService();
+            NotifikaceService ns = new NotifikaceService();
+
+            //Console.WriteLine(ts.getNewTiketID());
+            //Console.WriteLine(ts.createNewTicket("nazev", "popis", 3, 1)); // pokud vrati 1 tak vse OK
+            //foreach (String b in ts.getListOfAdminTikets())
+            //Console.WriteLine(b);
+            //Console.WriteLine(ts.getDetailOfTiket(1));
+            //Console.WriteLine(ts.assignTiketToGroup(3, 2)); // jestli 1 tak vse OK
+            //Console.WriteLine(ns.createNewNotification("textdsjahndans", 1, 1));
+            //foreach (String b in ts.getListOfExpiredTikets())
+            //Console.WriteLine(b);
+
+
 
             //Tiket
             //TiketMapper tm = new TiketMapper();
