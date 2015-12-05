@@ -1,8 +1,5 @@
 ﻿using BLL;
 using BLL.Services;
-using DAL;
-using DAL.Entities;
-using DAL.Mappers;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
