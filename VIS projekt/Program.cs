@@ -19,10 +19,13 @@ namespace VIS_projekt
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            //Application.Run(new Form1());
+            Application.Run(new Menu());
 
-            TiketService ts = new TiketService();
-            NotifikaceService ns = new NotifikaceService();
+            //TiketService ts = new TiketService();
+            //NotifikaceService ns = new NotifikaceService();
+
+
+
 
             //Console.WriteLine(ts.getNewTiketID());
             //Console.WriteLine(ts.createNewTicket("nazev", "popis", 3, 1)); // pokud vrati 1 tak vse OK

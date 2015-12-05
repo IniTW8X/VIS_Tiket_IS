@@ -80,6 +80,7 @@ namespace BLL
             Tiket t = new Tiket();
             t = tr.getDetails(t_ID);
             t.Skupina_skup_ID = skup_ID;
+            t.status = "Prirazen";
             return tr.updateTiket(t);
         }
 
