@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="LhutaForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LhutaForm.Designer.cs">
+      <DependentUpon>LhutaForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="NovyTiket.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -66,6 +72,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="LhutaForm.resx">
+      <DependentUpon>LhutaForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="NovyTiket.resx">
       <DependentUpon>NovyTiket.cs</DependentUpon>
     </EmbeddedResource>

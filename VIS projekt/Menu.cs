@@ -35,5 +35,12 @@ namespace VIS_projekt
             this.Hide();
             prirazeni.Show();
         }
+
+        private void kontrolaLhutBtn_Click(object sender, EventArgs e)
+        {
+            var lhuty = new LhutaForm();
+            this.Hide();
+            lhuty.Show();
+        }
     }
 }
